@@ -47,6 +47,17 @@
             app:srcCompat="@drawable/icon" />
 
         <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="390dp"
+            android:layout_marginLeft="75dp"
+
+            app:srcCompat="@drawable/barb1" />
+
+        <ImageView
             android:id="@+id/imageView1"
             android:layout_width="130dp"
             android:layout_height="130dp"
@@ -57,16 +68,7 @@
             android:layout_marginVertical="390dp"
 
             app:srcCompat="@drawable/barb2" />
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="75dp"
-            android:layout_marginVertical="390dp"
 
-            app:srcCompat="@drawable/barb1" />
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="130dp"
@@ -87,6 +89,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="75dp"
             android:layout_marginVertical="530dp"
+            android:onclick="barb2.xml"
 
             app:srcCompat="@drawable/barb4" />
 

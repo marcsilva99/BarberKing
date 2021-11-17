@@ -4,7 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml" value="0.3484375" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_register.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/barb1.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/barb2.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/barb3.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/barb4.xml" value="0.3625" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/fragment_profile.xml" value="0.3625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/menu/menu.xml" value="0.3625" />
       </map>
     </option>
