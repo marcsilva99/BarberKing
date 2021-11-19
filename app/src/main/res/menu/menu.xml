@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Início" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Perfil"/>
+    <item
+        android:id="@+id/ic_marcar"
+        android:icon="@drawable/ic_marcacao"
+        android:title="Marcação"/>
+    <item
+        android:id="@+id/ic_barber"
+        android:icon="@drawable/ic_barber"
+        android:title="Barbeiros" />
+    <item
+        android:id="@+id/ic_game"
+        android:icon="@drawable/ic_game"
+        android:title="Jogo" />
+
+</menu>
