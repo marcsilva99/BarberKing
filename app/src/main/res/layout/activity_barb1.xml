@@ -10,12 +10,12 @@
 
     <TextView
         android:id="@+id/tvBarbearia1"
-        android:layout_width="150dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
         android:background="#FFFFFF"
-        android:text="Barbearia 1"
+        android:text="Barbearia Zé Barberius"
         android:textAlignment="center"
         android:textSize="26dp"
         android:textStyle="bold" />

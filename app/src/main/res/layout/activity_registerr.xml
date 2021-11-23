@@ -59,7 +59,7 @@
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="3dp"
         android:hint="Telemóvel"
-        android:inputType="textCell"
+        android:inputType="text"
         android:maxLines="1" />
 
     <Button
