@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".barb4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".barb3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".barb1Activity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
