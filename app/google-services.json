@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634038370422",
+    "project_id": "barberking-28ddd",
+    "storage_bucket": "barberking-28ddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634038370422:android:73663375d6312c26279f57",
+        "android_client_info": {
+          "package_name": "com.example.barberking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634038370422-dsegce09hmkg9bh3ju195hs1peklo5a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjrRvhzaaIOje1TjiuR5Q9XOsjMZXzICM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634038370422-dsegce09hmkg9bh3ju195hs1peklo5a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
