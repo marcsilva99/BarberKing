@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.karumi.dexter.Dexter
 
 class MainnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +38,12 @@ class MainnActivity : AppCompatActivity() {
         val login = findViewById(R.id.tvloginMain) as TextView
         login.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        val marcar = findViewById(R.id.tvlojas) as TextView
+        marcar.setOnClickListener {
+            val intent = Intent(this, MarcacaoActivity::class.java)
             startActivity(intent)
         }
 
