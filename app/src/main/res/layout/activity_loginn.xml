@@ -93,7 +93,6 @@
         android:background="#FFFFFF"
         android:clickable="true"
         android:cursorVisible="true"
-        android:onClick="Esqueceu"
         android:text="Esqueceu password?"
         android:textAlignment="center"
         android:textSize="16sp"
