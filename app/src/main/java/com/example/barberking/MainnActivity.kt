@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.karumi.dexter.Dexter
 
 class MainnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainn);
-
 
         val image_view = findViewById(R.id.imageView1) as ImageView
         image_view.setOnClickListener {
