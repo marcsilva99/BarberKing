@@ -36,7 +36,7 @@ class MainnActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val login = findViewById(R.id.tvlojas) as TextView
+        val login = findViewById(R.id.tvloginMain) as TextView
         login.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
