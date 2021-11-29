@@ -41,9 +41,9 @@ class MainnActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val marcar = findViewById(R.id.tvlojas) as TextView
-        marcar.setOnClickListener {
-            val intent = Intent(this, MarcacaoActivity::class.java)
+        val profile = findViewById(R.id.tvlojas) as TextView
+        profile.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 
