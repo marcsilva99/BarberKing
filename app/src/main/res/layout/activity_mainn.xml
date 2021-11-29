@@ -28,22 +28,22 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation">
-
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
             android:id="@+id/tvlojas"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="275dp"
             android:background="#FFFFFF"
             android:text="Barbearias"
-            android:textColor="#696969"
             android:textAlignment="center"
+            android:textColor="#696969"
             android:textSize="25sp"
             android:textStyle="bold"
 
@@ -53,14 +53,13 @@
             android:id="@+id/tvloginMain"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="155dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="10dp"
             android:background="#FFFFFF"
-            android:textColor="#696969"
             android:text="Login"
             android:textAlignment="center"
+            android:textColor="#696969"
             android:textSize="20sp"
             android:textStyle="bold"
 
@@ -76,10 +75,9 @@
             android:id="@+id/imageView1"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="350dp"
-            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
 
             app:srcCompat="@drawable/barb1" />
 
@@ -87,11 +85,10 @@
             android:id="@+id/imageView2"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginRight="75dp"
             android:layout_marginVertical="350dp"
+            android:layout_marginEnd="75dp"
+            android:clickable="true"
 
             app:srcCompat="@drawable/barb2" />
 
@@ -99,25 +96,22 @@
             android:id="@+id/imageView3"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="75dp"
             android:layout_marginVertical="500dp"
+            android:layout_marginStart="75dp"
+            android:clickable="true"
 
             app:srcCompat="@drawable/barb4" />
+
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginRight="75dp"
             android:layout_marginVertical="500dp"
+            android:layout_marginEnd="75dp"
+            android:clickable="true"
             app:srcCompat="@drawable/barb5" />
-
-
 
 
     </FrameLayout>
