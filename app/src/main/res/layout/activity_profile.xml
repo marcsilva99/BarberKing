@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#782B2B"
     tools:context=".ProfileActivity">
 
 <TextView
@@ -14,9 +14,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_centerHorizontal="true"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
+            android:textColor="#C8C8C8"
             android:fontFamily="sans-serif"
-            android:text="Profile"
+            android:text="Perfil"
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />

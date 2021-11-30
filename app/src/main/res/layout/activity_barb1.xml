@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#782B2B"
     tools:context="">
 
 
@@ -16,9 +15,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="Barbearia Zé Barberius"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -37,9 +37,10 @@
         android:layout_below="@id/tvBarbearia1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="Morada:"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -49,9 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvMorada"
         android:layout_centerHorizontal="true"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="Rua do teste"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="26dp"
         android:textStyle="normal" />
 
@@ -62,9 +64,10 @@
         android:layout_below="@id/tvrua"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="Contacto:"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -74,9 +77,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvContacto"
         android:layout_centerHorizontal="true"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         android:text="912345678"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="26dp"
         android:textStyle="normal" />
 
@@ -87,13 +91,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="325dp"
         android:layout_marginTop="570dp"
-        android:background="#FFFFFF"
+        android:background="#595959"
         android:text="Ir Para"
         android:textAlignment="center"
-        android:textColor="#696969"
+        android:textColor="#C8C8C8"
         android:textSize="20sp"
-        android:textStyle="bold"
-            />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/gps1"
@@ -103,7 +106,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/map1" />
-
 
 
 </RelativeLayout>

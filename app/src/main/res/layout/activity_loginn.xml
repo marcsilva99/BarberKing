@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#782B2B"
     tools:context=".LoginActivity">
 <RelativeLayout
     android:layout_width="fill_parent"
@@ -18,7 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
         android:text="Login"
         android:textAlignment="center"
         android:textSize="26dp"
@@ -58,16 +59,16 @@
         android:layout_below="@+id/btLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
         android:clickable="true"
         android:cursorVisible="true"
-
         android:text="Ainda não tem conta? Registar."
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
 
-        />
+        tools:ignore="TextViewEdits" />
 
     <Button
         android:id="@+id/btLogin"
@@ -82,7 +83,7 @@
         android:shadowDy="0"
         android:shadowRadius="5"
         android:text="Login"
-        android:textColor="#FFFFFF" />
+        android:textColor="#C8C8C8" />
 
     <TextView
         android:id="@+id/tvEsqueceu"
@@ -91,7 +92,8 @@
         android:layout_below="@+id/tvRegister"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
         android:clickable="true"
         android:cursorVisible="true"
         android:text="Esqueceu password?"
