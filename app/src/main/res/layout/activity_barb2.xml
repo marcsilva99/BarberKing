@@ -9,16 +9,65 @@
     tools:context="">
 
     <TextView
-        android:id="@+id/tvLogin"
-        android:layout_width="220dp"
+        android:id="@+id/tvBarbearia2"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
         android:background="#FFFFFF"
-        android:text="Xavier Barbearia"
+        android:text="Barbearia Xavier"
         android:textAlignment="center"
         android:textSize="26dp"
         android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvMorada"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBarbearia2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:text="Morada:"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvrua"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMorada"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:text="Rua do teste"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvContacto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvrua"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:text="Contacto:"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvnumero"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContacto"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:text="912345678"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="normal" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,5 +76,28 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/barb2" />
+    <ImageView
+        android:id="@+id/gps1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvnumero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/map2" />
+
+    <TextView
+        android:id="@+id/tvButtonBarb2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="570dp"
+        android:background="#FFFFFF"
+        android:text="Ir Para"
+        android:textAlignment="center"
+        android:textColor="#696969"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
 </RelativeLayout>

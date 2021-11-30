@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     tools:context="">
+
 
     <TextView
         android:id="@+id/tvBarbearia1"
@@ -32,8 +34,8 @@
         android:id="@+id/tvMorada"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/tvBarbearia1"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:text="Morada:"
@@ -57,8 +59,8 @@
         android:id="@+id/tvContacto"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/tvrua"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:text="Contacto:"
@@ -78,13 +80,30 @@
         android:textSize="26dp"
         android:textStyle="normal" />
 
+    <TextView
+        android:id="@+id/tvButtonBarb1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="570dp"
+        android:background="#FFFFFF"
+        android:text="Ir Para"
+        android:textAlignment="center"
+        android:textColor="#696969"
+        android:textSize="20sp"
+        android:textStyle="bold"
+            />
+
     <ImageView
         android:id="@+id/gps1"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_below="@id/tvnumero"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/tvnumero"
-        app:srcCompat="@drawable/barb1" />
+        app:srcCompat="@drawable/map1" />
+
+
 
 </RelativeLayout>
