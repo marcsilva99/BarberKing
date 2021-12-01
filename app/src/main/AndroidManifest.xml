@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
-            android:name=".TipoCorte"
+            android:name=".TipoCorteActivity"
             android:exported="false" />
         <activity
             android:name=".barb4Activity"
