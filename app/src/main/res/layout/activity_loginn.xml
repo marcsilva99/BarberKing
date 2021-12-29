@@ -53,18 +53,18 @@
         android:inputType="textPassword" />
 
     <TextView
-        android:id="@+id/tvRegister"
+        android:id="@+id/registo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="#00FFFFFF"
-        android:textColor="#C8C8C8"
         android:clickable="true"
         android:cursorVisible="true"
         android:text="Ainda não tem conta? Registar."
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="16sp"
         android:textStyle="bold"
 
@@ -89,7 +89,7 @@
         android:id="@+id/tvEsqueceu"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvRegister"
+        android:layout_below="@+id/registo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#00FFFFFF"

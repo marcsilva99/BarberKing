@@ -16,7 +16,7 @@
             android:name=".BarbeariasActivity"
             android:exported="false" />
         <activity
-            android:name=".TipoCorte"
+            android:name=".TipoCorteActivity"
             android:exported="false" />
         <activity
             android:name=".barb4Activity"
