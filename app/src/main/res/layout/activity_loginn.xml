@@ -93,11 +93,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="#00FFFFFF"
-        android:textColor="#C8C8C8"
         android:clickable="true"
         android:cursorVisible="true"
         android:text="Esqueceu password?"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="16sp"
         android:textStyle="bold"
 

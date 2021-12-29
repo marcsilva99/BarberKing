@@ -1,5 +1,6 @@
 package com.example.barberking
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.util.Patterns
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.ktx.Firebase
@@ -34,6 +36,35 @@ class LoginActivity : AppCompatActivity() {
             doLogin()
         }
 
+        val esqueceu = findViewById(R.id.tvEsqueceu) as TextView
+        esqueceu.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            val view = layoutInflater.inflate(R.layout.activity_esqueceu_pass,null)
+            val email= view.findViewById<EditText>(R.id.etEmail)
+            builder.setView(view)
+            builder.setPositiveButton("Reset", DialogInterface.OnClickListener {_ , _ ->
+                forgotPassword(email)
+            })
+            builder.setNegativeButton("Fechar", DialogInterface.OnClickListener {_, _ ->  })
+                builder.show()
+        }
+
+    }
+    private fun forgotPassword(email: EditText){
+        val email = findViewById(R.id.etEmail) as EditText
+        if (email.text.toString().isEmpty()){
+            return
+        }
+        if (Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()){
+            return
+        }
+
+        auth.sendPasswordResetEmail(email.text.toString())
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful){
+                        Toast.makeText(this, "Email Enviado.", Toast.LENGTH_SHORT).show()
+                    }
+                }
     }
 
     private fun doLogin() {
@@ -44,7 +75,7 @@ class LoginActivity : AppCompatActivity() {
             email.requestFocus()
             return
         }
-        if (Patterns.EMAIL_ADDRESS.matcher(email.toString()).matches()){
+        if (Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()){
             email.error = "Por favor insira um email válido."
             email.requestFocus()
             return

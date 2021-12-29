@@ -26,9 +26,12 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/buttonshape.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml" value="0.276268115942029" />
         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbearias.xml" value="0.2694746376811594" />
-        <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu.xml" value="0.3625" />
+        <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml" value="0.3625" />
+        <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml" value="0.33" />
         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml" value="0.276268115942029" />
         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml" value="0.276268115942029" />
         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml" value="0.276268115942029" />

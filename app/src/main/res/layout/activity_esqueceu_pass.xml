@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#782B2B"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:background="#00FFFFFF"
+            android:text="Reset"
+            android:textAlignment="center"
+            android:textColor="#C8C8C8"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReset"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="50dp"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="3dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="265dp"
+            android:layout_height="283dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/icon" />
+
+    </RelativeLayout>
+</ScrollView>
