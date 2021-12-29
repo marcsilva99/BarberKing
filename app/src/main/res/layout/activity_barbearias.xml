@@ -42,43 +42,43 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="150dp"
-            android:layout_marginStart="75dp"
+            android:layout_marginStart="100dp"
 
             app:srcCompat="@drawable/barb1" />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="150dp"
-            android:layout_marginEnd="75dp"
+            android:layout_marginEnd="100dp"
             android:clickable="true"
 
             app:srcCompat="@drawable/barb2" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="300dp"
-            android:layout_marginStart="75dp"
+            android:layout_marginVertical="350dp"
+            android:layout_marginStart="100dp"
             android:clickable="true"
 
             app:srcCompat="@drawable/barb4" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="300dp"
-            android:layout_marginEnd="75dp"
+            android:layout_marginVertical="350dp"
+            android:layout_marginEnd="100dp"
             android:clickable="true"
             app:srcCompat="@drawable/barb5" />
 

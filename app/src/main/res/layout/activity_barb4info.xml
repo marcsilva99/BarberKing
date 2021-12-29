@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#782B2B"
+    tools:context=".barb4infoActivity">
+
+    <TextView
+        android:id="@+id/tvBarbearia4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
+        android:text="Barbearia Marcelo"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvMorada"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBarbearia4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
+        android:text="Morada:"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvrua"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMorada"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
+        android:text="Rua de casa "
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvContacto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvrua"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
+        android:text="Contacto:"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvnumero"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContacto"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:textColor="#C8C8C8"
+        android:text="912345678"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/barb5" />
+
+    <ImageView
+        android:id="@+id/gps1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvnumero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/map4" />
+
+    <TextView
+        android:id="@+id/tvButtonBarb4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="570dp"
+        android:textColor="#C8C8C8"
+        android:background="#595959"
+        android:text="Ir Para"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

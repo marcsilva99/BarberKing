@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#782B2B"
+    tools:context=".barb1infoActivity">
+
+
+    <TextView
+        android:id="@+id/tvBarbearia1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="#00FFFFFF"
+        android:text="LELE BARBER SHOP"
+        android:textAlignment="center"
+        android:textColor="#C8C8C8"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/texttele1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="410dp"
+        android:layout_marginStart="140dp"
+        android:background="#00FFFFFF"
+        android:text="912345800"
+        android:textColor="#C8C8C8"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/barb1" />
+
+    <ImageView
+        android:id="@+id/localbarb1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="335dp"
+        android:layout_marginStart="83dp"
+        app:srcCompat="@drawable/pino" />
+
+
+    <ImageView
+        android:id="@+id/telelbarb1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="395dp"
+        android:layout_marginStart="83dp"
+        app:srcCompat="@drawable/tele" />
+
+    <TextView
+        android:id="@+id/textlocal1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="350dp"
+        android:layout_marginStart="140dp"
+        android:background="#00FFFFFF"
+        android:text="Rua João de Deus 540, VNG"
+
+        android:textColor="#C8C8C8"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvButtonBarb1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="540dp"
+        android:background="#595959"
+        android:text="Ir Para"
+        android:textAlignment="center"
+        android:textColor="#C8C8C8"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gps1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        app:srcCompat="@drawable/map1" />
+
+
+</RelativeLayout>

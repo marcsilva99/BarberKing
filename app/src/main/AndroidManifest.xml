@@ -13,6 +13,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".barb4barbeirosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb4infoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb3infoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb3barbeirosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb2infoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb2barbeirosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb1barbeirosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".barb1infoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarcacaoActivity"
+            android:exported="false" />
+        <activity
             android:name=".BarbeariasActivity"
             android:exported="false" />
         <activity
