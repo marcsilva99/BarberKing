@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".BarbeariasActivity"
+            android:exported="false" />
+        <activity
             android:name=".TipoCorte"
             android:exported="false" />
         <activity

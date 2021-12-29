@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#782B2B"
-    tools:context=".MainnActivity">
+    tools:context=".BarbeariasActivity">
 
 
 
@@ -22,54 +21,66 @@
         app:layout_constraintVertical_bias="0.0">
 
 
+        <TextView
+            android:id="@+id/tvlojas"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="#00FFFFFF"
+            android:text="Barbearias"
+            android:textAlignment="center"
+            android:textColor="#C8C8C8"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/icon" />
-
-        <ImageView
-            android:id="@+id/loginimg"
+            android:id="@+id/imageView1"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="300dp"
-            android:layout_marginEnd="75dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/loginimg" />
+            android:layout_marginVertical="150dp"
+            android:layout_marginStart="75dp"
+
+            app:srcCompat="@drawable/barb1" />
 
         <ImageView
-            android:id="@+id/calendarioimg"
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="150dp"
+            android:layout_marginEnd="75dp"
+            android:clickable="true"
+
+            app:srcCompat="@drawable/barb2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="300dp"
             android:layout_marginStart="75dp"
             android:clickable="true"
-            app:srcCompat="@drawable/calendarioimg" />
+
+            app:srcCompat="@drawable/barb4" />
 
         <ImageView
-            android:id="@+id/barbeariasimg"
+            android:id="@+id/imageView4"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="450dp"
+            android:layout_marginVertical="300dp"
             android:layout_marginEnd="75dp"
             android:clickable="true"
-            app:srcCompat="@drawable/barbeariasimg" />
-
-        <ImageView
-            android:id="@+id/img2"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="450dp"
-            android:layout_marginStart="75dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/img" />
-
-
+            app:srcCompat="@drawable/barb5" />
 
 
     </FrameLayout>
