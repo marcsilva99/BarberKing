@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class MainnActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainn);
@@ -27,4 +28,5 @@ class MainnActivity : AppCompatActivity() {
 
 
     }
+
 }
