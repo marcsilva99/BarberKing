@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context="">
+    tools:context=".barb2infoActivity">
 
     <TextView
         android:id="@+id/tvBarbearia2"
@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
-        android:background="#00FFFFFF"
         android:text="BARBEARIA ASGARD"
         android:textAlignment="center"
         android:textColor="#C8C8C8"
@@ -36,7 +35,6 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="350dp"
         android:layout_marginStart="140dp"
-        android:background="#00FFFFFF"
         android:text="Rua do Defensor 30, VNG"
         android:textColor="#C8C8C8"
         android:textSize="15dp"
@@ -57,7 +55,6 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="410dp"
         android:layout_marginStart="140dp"
-        android:background="#00FFFFFF"
         android:text="930040514"
         android:textColor="#C8C8C8"
         android:textSize="15dp"

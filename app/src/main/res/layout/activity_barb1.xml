@@ -25,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="280dp"
-        android:background="#00FFFFFF"
         android:text="LELE BARBER SHOP"
         android:textAlignment="center"
         android:textColor="#C8C8C8"

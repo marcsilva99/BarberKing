@@ -67,7 +67,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:background="#00FFFFFF"
             android:text="Escolha o seu tipo de corte"
             android:textAlignment="center"
             android:textColor="#C8C8C8"

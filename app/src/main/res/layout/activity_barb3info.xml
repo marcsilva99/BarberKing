@@ -6,73 +6,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context="">
+    tools:context=".barb3infoActivity">
 
     <TextView
         android:id="@+id/tvBarbearia3"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
-        android:background="#00FFFFFF"
-        android:textColor="#C8C8C8"
-        android:text="Barbearia Sergio"
+        android:text="GENTLEMEN'S BARBERSHOP"
         android:textAlignment="center"
-        android:textSize="26dp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/tvMorada"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvBarbearia3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="#00FFFFFF"
         android:textColor="#C8C8C8"
-        android:text="Morada:"
-        android:textAlignment="center"
         android:textSize="26dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvrua"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvMorada"
-        android:layout_centerHorizontal="true"
-        android:background="#00FFFFFF"
-        android:textColor="#C8C8C8"
-        android:text="Rua do teste"
-        android:textAlignment="center"
-        android:textSize="26dp"
-        android:textStyle="normal" />
+    <ImageView
+        android:id="@+id/localbarb3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="335dp"
+        android:layout_marginStart="83dp"
+        app:srcCompat="@drawable/pino" />
 
     <TextView
-        android:id="@+id/tvContacto"
-        android:layout_width="150dp"
+        android:id="@+id/textlocal2"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvrua"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="#00FFFFFF"
+        android:layout_marginVertical="350dp"
+        android:layout_marginStart="140dp"
+        android:text="Rua do Aliados, Porto"
         android:textColor="#C8C8C8"
-        android:text="Contacto:"
-        android:textAlignment="center"
-        android:textSize="26dp"
+        android:textSize="15dp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/telebarb2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="395dp"
+        android:layout_marginStart="83dp"
+        app:srcCompat="@drawable/tele" />
+
     <TextView
-        android:id="@+id/tvnumero"
-        android:layout_width="150dp"
+        android:id="@+id/texttele1"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvContacto"
-        android:layout_centerHorizontal="true"
-        android:background="#00FFFFFF"
+        android:layout_marginVertical="410dp"
+        android:layout_marginStart="140dp"
+        android:text="225624542"
         android:textColor="#C8C8C8"
-        android:text="912345678"
-        android:textAlignment="center"
-        android:textSize="26dp"
-        android:textStyle="normal" />
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -84,11 +71,10 @@
 
     <ImageView
         android:id="@+id/gps1"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_below="@id/tvnumero"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="480dp"
         app:srcCompat="@drawable/map3" />
 
     <TextView
@@ -96,12 +82,12 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="325dp"
-        android:layout_marginTop="570dp"
-        android:textColor="#C8C8C8"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="540dp"
         android:background="#595959"
         android:text="Ir Para"
         android:textAlignment="center"
+        android:textColor="#C8C8C8"
         android:textSize="20sp"
         android:textStyle="bold" />
 

@@ -75,7 +75,7 @@ class LoginActivity : AppCompatActivity() {
         val view = layoutInflater.inflate(R.layout.activity_esqueceu_pass,null)
         val email= view.findViewById(R.id.etEmail2) as EditText
         builder.setView(view)
-        builder.setPositiveButton("Reset", DialogInterface.OnClickListener {_ , _ ->
+        builder.setPositiveButton("Enviar email", DialogInterface.OnClickListener {_ , _ ->
             if (email.text.toString().isEmpty()){
                 Toast.makeText(this, "Insira um email.", Toast.LENGTH_SHORT).show()
             }
