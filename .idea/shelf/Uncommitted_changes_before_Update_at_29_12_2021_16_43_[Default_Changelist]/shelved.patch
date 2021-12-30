@@ -1,0 +1,103 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'kotlin-android'\r\n}\r\n\r\n\r\nandroid {\r\n    compileSdk 31\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.barberking\"\r\n        minSdk 30\r\n        targetSdk 31\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n        targetSdkVersion 31\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n    kotlinOptions {\r\n        jvmTarget = '1.8'\r\n    }\r\n    compileSdkVersion 31\r\n    buildToolsVersion '32.0.0'\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.core:core-ktx:1.7.0'\r\n    implementation 'androidx.appcompat:appcompat:1.4.0'\r\n    implementation 'com.google.android.material:material:1.4.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'\r\n    implementation 'com.google.android.gms:play-services-maps:18.0.0'\r\n    implementation 'androidx.legacy:legacy-support-v4:1.0.0'\r\n    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'\r\n    testImplementation 'junit:junit:'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\r\n    implementation platform('com.google.firebase:firebase-bom:29.0.0')\r\n    implementation 'com.google.firebase:firebase-analytics-ktx'\r\n}\r\napply plugin: 'com.google.gms.google-services'
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision b978c1b6b14eaf2f6c9ea387c618f467a6852672)
++++ b/app/build.gradle	(date 1640795159667)
+@@ -49,5 +49,7 @@
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+     implementation platform('com.google.firebase:firebase-bom:29.0.0')
+     implementation 'com.google.firebase:firebase-analytics-ktx'
++    implementation 'com.shihart.stepview:stepview:1.4.0'
++    implementation 'com.jaredrummler:material-spinner:1.3.1'
+ }
+ apply plugin: 'com.google.gms.google-services'
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_marcacao.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"#782B2B\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".MarcacaoActivity\">\r\n\r\n\r\n</RelativeLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_marcacao.xml b/app/src/main/res/layout/activity_marcacao.xml
+--- a/app/src/main/res/layout/activity_marcacao.xml	(revision b978c1b6b14eaf2f6c9ea387c618f467a6852672)
++++ b/app/src/main/res/layout/activity_marcacao.xml	(date 1640796145548)
+@@ -8,5 +8,31 @@
+     android:orientation="vertical"
+     tools:context=".MarcacaoActivity">
+ 
++    <LinearLayout
++        android:id="@+id/Layout_button"
++        android:orientation="horizontal"
++        android:weightSum="2"
++        android:padding="4dp"
++        android:layout_alignParentBottom="true"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++
++        <Button
++            android:id="@+id/anterior"
++            android:text="Anterior"
++            android:enabled="false"
++            android:fontFamily="@font/bellerose"
++            android:layout_centerHorizontal="true"
++            android:layout_above="@+id/text_skip"
++            android:layout_width="0dp"
++            android:layoutmarginright="4dp"
++            android:background="@color/Black"
++            android:textColor="@android:Color/white"
++            android:layout_weight="1"
++            android:layout_height="wrap_content"
++
++
++
++    </LinearLayout>
+ 
+ </RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.barberking\">\r\n\r\n    <uses-permission android:name=\"android.permission.WRITE_CALENDAR\" />\r\n    <uses-permission android:name=\"android.permission.READ_CALENDAR\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_logo\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_logo_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.BarberKing\">\r\n        <activity\r\n            android:name=\".BarbeariasActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".TipoCorteActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".barb4Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".barb3Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainnActivity\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".barb2Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".barb1Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".LoginActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".RegisterActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".ProfileActivity\"\r\n            android:exported=\"false\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision b978c1b6b14eaf2f6c9ea387c618f467a6852672)
++++ b/app/src/main/AndroidManifest.xml	(date 1640795284611)
+@@ -13,6 +13,9 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.BarberKing">
+         <activity
++            android:name=".BookingActivity"
++            android:exported="false" />
++        <activity
+             android:name=".BarbeariasActivity"
+             android:exported="false" />
+         <activity
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/buttonshape.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/buttonshapee.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/formabotao.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/ic_barber.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/ic_marcacao.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb1.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb2.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb3.xml\" value=\"0.32019927536231885\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_login.xml\" value=\"0.2115036231884058\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml\" value=\"0.3179347826086957\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/fragment_barb1.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/fragment_profile.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/menu/menu.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/buttonshape.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbearias.xml\" value=\"0.2694746376811594\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/drawable/ic_profile.xml\" value=\"0.21875\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb1.xml\" value=\"0.25769927536231885\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb2.xml\" value=\"0.25769927536231885\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb3.xml\" value=\"0.32563405797101447\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb4.xml\" value=\"0.32563405797101447\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_login.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_loginn.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_main.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_mainn.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_register.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_registerr.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_verificar_login.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb1.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb2.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb3.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb4.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barra.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/dialog_forgot_password.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/fragment_profile.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/menu/menu.xml\" value=\"0.36666666666666664\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"SuppressKotlinCodeStyleNotification\">\r\n    <option name=\"disableForAll\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b978c1b6b14eaf2f6c9ea387c618f467a6852672)
++++ b/.idea/misc.xml	(date 1640795474274)
+@@ -37,6 +37,10 @@
+         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml" value="0.276268115942029" />
+         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml" value="0.276268115942029" />
+         <entry key="..\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml" value="0.2957427536231884" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml" value="0.286231884057971" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml" value="0.2653985507246377" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml" value="0.2653985507246377" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml" value="0.286231884057971" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/drawable/ic_profile.xml" value="0.21875" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb1.xml" value="0.25769927536231885" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb2.xml" value="0.25769927536231885" />
