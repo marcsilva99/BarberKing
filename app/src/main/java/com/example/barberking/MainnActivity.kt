@@ -85,16 +85,13 @@ class MainnActivity : AppCompatActivity() {
         val senha= view.findViewById(R.id.etSenha) as EditText
         builder.setView(view)
         builder.setPositiveButton("Submeter", DialogInterface.OnClickListener { _, _ ->
-            if (senha.text.toString().isEmpty()){
-                Toast.makeText(this, "Insira a senha.", Toast.LENGTH_SHORT).show()
-            }
-            if (senha.text.toString() != "KING21"){
-                Toast.makeText(this, "Senha errada.", Toast.LENGTH_SHORT).show()
-            }
             if (senha.text.toString() == "KING21"){
                         Toast.makeText(this, "Senha correta.", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, TipoCorteActivity::class.java))
-                    }
+            }else{
+                Toast.makeText(this, "Senha errada.", Toast.LENGTH_SHORT).show()
+
+            }
 
         })
         builder.setNegativeButton("Fechar", DialogInterface.OnClickListener { _, _ ->  })
