@@ -3,6 +3,7 @@ package com.example.barberking
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,8 +19,11 @@ class ProfileActivity : AppCompatActivity() {
         val logout = findViewById(R.id.btLogout) as TextView
         logout.setOnClickListener {
             logout()
+            Toast.makeText(baseContext, "Até breve!",
+                Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainnActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

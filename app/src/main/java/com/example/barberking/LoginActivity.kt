@@ -40,6 +40,11 @@ class LoginActivity : AppCompatActivity() {
         esqueceu.setOnClickListener {
             forgotPassword()
         }
+
+        val senha = findViewById(R.id.tvEsqueceu) as TextView
+        senha.setOnClickListener {
+            forgotPassword()
+        }
     }
 
     private fun doLogin() {
@@ -103,6 +108,8 @@ class LoginActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?){
         if (currentUser != null){
             startActivity(Intent(this, MainnActivity::class.java))
+            Toast.makeText(baseContext, "Bem vindo!.",
+                Toast.LENGTH_SHORT).show()
         } else{
             Toast.makeText(baseContext, "Erro no Login.",
                     Toast.LENGTH_SHORT).show()

@@ -33,21 +33,10 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/etCell"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvEmail"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10sp"
-            android:drawableStart="@drawable/ic_phone"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-        <EditText
             android:id="@+id/etPasswordNova"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/etCell"
+            android:layout_below="@+id/tvEmail"
             android:layout_centerHorizontal="true"
             android:drawableStart="@drawable/ic_password"
             android:hint="Password Nova"

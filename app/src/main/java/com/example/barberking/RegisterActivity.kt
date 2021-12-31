@@ -53,7 +53,6 @@ class RegisterActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         startActivity(Intent(this,LoginActivity::class.java))
-                        finish()
                     } else {
                         Toast.makeText(baseContext, "Erro no registo.",
                                 Toast.LENGTH_SHORT).show()
