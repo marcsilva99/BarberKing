@@ -107,9 +107,14 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?){
         if (currentUser != null){
-            startActivity(Intent(this, MainnActivity::class.java))
-            Toast.makeText(baseContext, "Bem vindo!.",
+            Toast.makeText(baseContext, "Bem vindo!",
                 Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@LoginActivity, MainnActivity::class.java)
+            intent.flags =
+                Intent.FLAG_ACTIVITY_CLEAR_TASK.or(
+                    Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+
         } else{
             Toast.makeText(baseContext, "Erro no Login.",
                     Toast.LENGTH_SHORT).show()
@@ -117,4 +122,3 @@ class LoginActivity : AppCompatActivity() {
     }
 
 }
-

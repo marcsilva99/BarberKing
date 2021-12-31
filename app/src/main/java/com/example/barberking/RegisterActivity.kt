@@ -9,6 +9,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -53,6 +55,11 @@ class RegisterActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         startActivity(Intent(this,LoginActivity::class.java))
+                        Toast.makeText(baseContext, "Criado com sucesso.",
+                            Toast.LENGTH_SHORT).show()
+                        finish()
+                        Firebase.auth.signOut()
+                        Firebase.auth.currentUser?.delete()
                     } else {
                         Toast.makeText(baseContext, "Erro no registo.",
                                 Toast.LENGTH_SHORT).show()

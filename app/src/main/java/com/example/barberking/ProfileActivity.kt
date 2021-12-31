@@ -21,9 +21,11 @@ class ProfileActivity : AppCompatActivity() {
             logout()
             Toast.makeText(baseContext, "Até breve!",
                 Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainnActivity::class.java)
+            val intent = Intent(this@ProfileActivity, MainnActivity::class.java)
+            intent.flags =
+                Intent.FLAG_ACTIVITY_CLEAR_TASK.or(
+                    Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
-            finish()
         }
 
     }

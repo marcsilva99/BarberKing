@@ -25,7 +25,7 @@ class MainnActivity : AppCompatActivity() {
         val login = findViewById(R.id.loginimg) as ImageView
         login.setOnClickListener {
             val user = auth.currentUser
-            teste(user)
+            login(user)
         }
 
         val barbearias = findViewById(R.id.barbeariasimg) as ImageView
@@ -52,7 +52,7 @@ class MainnActivity : AppCompatActivity() {
         }
     }
 
-    private fun teste(currentUser: FirebaseUser?){
+    private fun login(currentUser: FirebaseUser?){
         if (currentUser != null){
             startActivity(Intent(this, ProfileActivity::class.java))
         } else{
