@@ -36,7 +36,8 @@ class MainnActivity : AppCompatActivity() {
 
         val senha2 = findViewById(R.id.jogoimg) as ImageView
         senha2.setOnClickListener {
-            senha()
+            val user = auth.currentUser
+            senha(user)
         }
 
         val marcacao = findViewById(R.id.calendarioimg) as ImageView
@@ -79,10 +80,11 @@ class MainnActivity : AppCompatActivity() {
         }
     }
 
-    private fun senha(){
+    private fun senha(currentUser: FirebaseUser?){
         val builder = AlertDialog.Builder(this)
         val view = layoutInflater.inflate(R.layout.activity_senha,null)
         val senha= view.findViewById(R.id.etSenha) as EditText
+        if (currentUser != null){
         builder.setView(view)
         builder.setPositiveButton("Submeter", DialogInterface.OnClickListener { _, _ ->
             if (senha.text.toString() == "KING21"){
@@ -96,6 +98,9 @@ class MainnActivity : AppCompatActivity() {
         })
         builder.setNegativeButton("Fechar", DialogInterface.OnClickListener { _, _ ->  })
         builder.show()
-    }
+    }else{
+            Toast.makeText(baseContext, "Faça login primeiro.",
+                Toast.LENGTH_SHORT).show()
+    }}
 
 }
