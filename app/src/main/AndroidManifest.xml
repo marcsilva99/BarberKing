@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".JogoActivity"
+            android:exported="false" />
+        <activity
             android:name=".barb4barbeirosActivity"
             android:exported="false" />
         <activity
