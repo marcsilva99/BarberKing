@@ -168,9 +168,7 @@ class JogoActivity : AppCompatActivity(), View.OnClickListener {
         )
     }
 
-    /**
-     * A function to set default options view when the new question is loaded or when the answer is reselected.
-     */
+
     private fun defaultOptionsView() {
 
         val options = ArrayList<TextView>()
