@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".JogoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity
@@ -23,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".Question"
-            android:exported="false" />
-        <activity
-            android:name=".JogoActivity"
             android:exported="false" />
         <activity
             android:name=".barb4barbeirosActivity"
