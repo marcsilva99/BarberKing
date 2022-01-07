@@ -110,7 +110,7 @@ class JogoActivity : AppCompatActivity(), View.OnClickListener {
 
                     // This is for correct answer
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
-
+                    btn_submit.text = "FINISH"
                     if (mCurrentPosition == mQuestionsList!!.size) {
                         btn_submit.text = "FINISH"
                     } else {
