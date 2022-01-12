@@ -58,7 +58,8 @@
             android:layout_marginEnd="100dp"
             android:clickable="true"
 
-            app:srcCompat="@drawable/barb2" />
+            app:srcCompat="@drawable/barb2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/imageView3"
