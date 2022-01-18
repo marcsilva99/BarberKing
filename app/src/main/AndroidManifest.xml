@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".LeleBarberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GentelmenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BarberHouseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsgardActivity"
+            android:exported="false" />
+        <activity
             android:name=".JogoActivity"
             android:exported="false" />
         <activity
