@@ -13,6 +13,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".Barbeiro8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barbeiro1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Barb2datasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Barb1datasActivity"
+            android:exported="false" />
+        <activity
             android:name=".LeleBarberActivity"
             android:exported="false" />
         <activity
