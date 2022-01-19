@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context=".AsgardActivity">
+    tools:context=".Marcação.Asgard.AsgardActivity">
 
     <LinearLayout
         android:id="@+id/ll_main_layout"

@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context=".MarcacaoActivity">
+    tools:context=".Marcação.MarcacaoActivity">
 
     <LinearLayout
-        android:id="@+id/ll_main_layout"
+        android:id="@+id/escolhabarberaria"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/escolha"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:text="Em qual barbearia quer realizar o corte?"
+            android:textAlignment="center"
+            android:textColor="#C8C8C8"
+            android:textSize="26dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/asgard1"

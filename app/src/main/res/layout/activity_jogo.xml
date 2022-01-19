@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="#782B2B"
-    tools:context=".JogoActivity">
+    tools:context=".Jogo.JogoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

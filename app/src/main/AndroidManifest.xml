@@ -13,52 +13,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
-            android:name=".Barbeiro8Activity"
+            android:name=".Marcação.LeleBarber.Barbeiro8Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro7Activity"
+            android:name=".Marcação.LeleBarber.Barbeiro7Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro6Activity"
+            android:name=".Marcação.Gentlemen.Barbeiro6Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro5Activity"
+            android:name=".Marcação.Gentlemen.Barbeiro5Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro4Activity"
+            android:name=".Marcação.BarberHouse.Barbeiro4Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro3Activity"
+            android:name=".Marcação.BarberHouse.Barbeiro3Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro2Activity"
+            android:name=".Marcação.Asgard.Barbeiro2Activity"
             android:exported="false" />
         <activity
-            android:name=".Barbeiro1Activity"
+            android:name=".Marcação.Asgard.Barbeiro1Activity"
             android:exported="false" />
         <activity
-            android:name=".Barb2datasActivity"
+            android:name=".Marcação.Teste.Barb2datasActivity"
             android:exported="false" />
         <activity
-            android:name=".Barb1datasActivity"
+            android:name=".Marcação.Teste.Barb1datasActivity"
             android:exported="false" />
         <activity
-            android:name=".LeleBarberActivity"
+            android:name=".Marcação.LeleBarber.LeleBarberActivity"
             android:exported="false" />
         <activity
-            android:name=".GentelmenActivity"
+            android:name=".Marcação.Gentlemen.GentelmenActivity"
             android:exported="false" />
         <activity
-            android:name=".BarberHouseActivity"
+            android:name=".Marcação.BarberHouse.BarberHouseActivity"
             android:exported="false" />
         <activity
-            android:name=".AsgardActivity"
+            android:name=".Marcação.Asgard.AsgardActivity"
             android:exported="false" />
         <activity
-            android:name=".JogoActivity"
+            android:name=".Jogo.JogoActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultActivity"
+            android:name=".Jogo.ResultActivity"
             android:exported="false" />
         <activity
             android:name=".Jogo2Activity"
@@ -67,46 +67,46 @@
             android:name=".QuizQuestionsActivity"
             android:exported="false" />
         <activity
-            android:name=".Question"
+            android:name=".Jogo.Question"
             android:exported="false" />
         <activity
-            android:name=".barb4barbeirosActivity"
+            android:name=".InfoBarbearias.BarberHouse.barb4barbeirosActivity"
             android:exported="false" />
         <activity
-            android:name=".barb4infoActivity"
+            android:name=".InfoBarbearias.BarberHouse.barb4infoActivity"
             android:exported="false" />
         <activity
-            android:name=".barb3infoActivity"
+            android:name=".InfoBarbearias.Gentlemen.barb3infoActivity"
             android:exported="false" />
         <activity
-            android:name=".barb3barbeirosActivity"
+            android:name=".InfoBarbearias.Gentlemen.barb3barbeirosActivity"
             android:exported="false" />
         <activity
-            android:name=".barb2infoActivity"
+            android:name=".InfoBarbearias.Asgard.barb2infoActivity"
             android:exported="false" />
         <activity
-            android:name=".barb2barbeirosActivity"
+            android:name=".InfoBarbearias.Asgard.barb2barbeirosActivity"
             android:exported="false" />
         <activity
-            android:name=".barb1barbeirosActivity"
+            android:name=".InfoBarbearias.LeleBarber.barb1barbeirosActivity"
             android:exported="false" />
         <activity
-            android:name=".barb1infoActivity"
+            android:name=".InfoBarbearias.LeleBarber.barb1infoActivity"
             android:exported="false" />
         <activity
-            android:name=".MarcacaoActivity"
+            android:name=".Marcação.MarcacaoActivity"
             android:exported="false" />
         <activity
-            android:name=".BarbeariasActivity"
+            android:name=".InfoBarbearias.BarbeariasActivity"
             android:exported="false" />
         <activity
             android:name=".TipoCorteActivity"
             android:exported="false" />
         <activity
-            android:name=".barb4Activity"
+            android:name=".InfoBarbearias.BarberHouse.barb4Activity"
             android:exported="false" />
         <activity
-            android:name=".barb3Activity"
+            android:name=".InfoBarbearias.Gentlemen.barb3Activity"
             android:exported="false" />
         <activity
             android:name=".MainnActivity"
@@ -118,16 +118,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".barb2Activity"
+            android:name=".InfoBarbearias.Asgard.barb2Activity"
             android:exported="false" />
         <activity
-            android:name=".barb1Activity"
+            android:name=".InfoBarbearias.LeleBarber.barb1Activity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Inicio.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Inicio.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

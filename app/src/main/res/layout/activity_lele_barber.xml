@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context=".LeleBarberActivity">
+    tools:context=".Marcação.LeleBarber.LeleBarberActivity">
 
     <LinearLayout
         android:id="@+id/ll_main_layout"

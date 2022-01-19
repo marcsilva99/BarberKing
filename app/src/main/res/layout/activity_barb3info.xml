@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#782B2B"
-    tools:context=".barb3infoActivity">
+    tools:context=".InfoBarbearias.Gentlemen.barb3infoActivity">
 
     <TextView
         android:id="@+id/tvBarbearia3"

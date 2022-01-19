@@ -6,7 +6,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#782B2B"
-    tools:context=".barb1Activity">
+    tools:context=".InfoBarbearias.LeleBarber.barb1Activity">
 
     <FrameLayout
 
