@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".Marcação.Asgard.D1B1"
+            android:exported="false" />
+        <activity
             android:name=".Marcação.LeleBarber.Barbeiro8Activity"
             android:exported="false" />
         <activity
