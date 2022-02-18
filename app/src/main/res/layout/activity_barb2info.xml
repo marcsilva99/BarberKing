@@ -23,7 +23,7 @@
     <ImageView
         android:id="@+id/localbarb2"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="51dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginVertical="335dp"
         android:layout_marginStart="83dp"
