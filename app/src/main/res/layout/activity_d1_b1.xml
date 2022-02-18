@@ -42,6 +42,7 @@
             android:textColor="#7A8089"
             android:textSize="18sp"
             android:text="10:00/11:00"
+            android:onClick="onClick"
             />
 
         <TextView
@@ -58,6 +59,7 @@
             android:textColor="#7A8089"
             android:textSize="18sp"
             android:text="11:00/12:00"
+            android:onClick="onClick"
             />
         <TextView
             android:id="@+id/h1415"
@@ -73,6 +75,7 @@
             android:textColor="#7A8089"
             android:textSize="18sp"
             android:text="14:00/15:00"
+            android:onClick="onClick"
             />
         <TextView
             android:id="@+id/h1516"
@@ -88,6 +91,7 @@
             android:textColor="#7A8089"
             android:textSize="18sp"
             android:text="15:00/16:00"
+            android:onClick="onClick"
             />
         <TextView
             android:id="@+id/h1617"
@@ -103,6 +107,7 @@
             android:textColor="#7A8089"
             android:textSize="18sp"
             android:text="16:00/17:00"
+            android:onClick="onClick"
             />
 
         <Button
