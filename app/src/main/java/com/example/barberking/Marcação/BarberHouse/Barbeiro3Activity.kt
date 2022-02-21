@@ -32,7 +32,7 @@ class Barbeiro3Activity : AppCompatActivity() {
             val intent = Intent(this, D2B3::class.java)
             startActivity(intent)
         }
-        val D3 = findViewById(R.id.D2) as TextView
+        val D3 = findViewById(R.id.D3) as TextView
         D3.setOnClickListener {
             val intent = Intent(this, D3B3::class.java)
             startActivity(intent)
