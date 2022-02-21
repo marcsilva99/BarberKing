@@ -1,22 +1,13 @@
 package com.example.barberking.Marcação.Asgard
 
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat
+import com.example.barberking.Marcação.Asgard.B1D.D1B1
+import com.example.barberking.Marcação.Asgard.B1D.D2B1
+import com.example.barberking.Marcação.Asgard.B1D.D3B1
 import com.example.barberking.R
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_barbeiro1.*
-import kotlinx.android.synthetic.main.activity_d1_b1.*
-import kotlinx.android.synthetic.main.activity_jogo.*
 
 
 class Barbeiro1Activity : AppCompatActivity() {
@@ -29,6 +20,16 @@ class Barbeiro1Activity : AppCompatActivity() {
         val D1 = findViewById(R.id.D1) as TextView
         D1.setOnClickListener {
             val intent = Intent(this, D1B1::class.java)
+            startActivity(intent)
+        }
+        val D2 = findViewById(R.id.D2) as TextView
+        D2.setOnClickListener {
+            val intent = Intent(this, D2B1::class.java)
+            startActivity(intent)
+        }
+        val D3 = findViewById(R.id.D2) as TextView
+        D3.setOnClickListener {
+            val intent = Intent(this, D3B1::class.java)
             startActivity(intent)
         }
 

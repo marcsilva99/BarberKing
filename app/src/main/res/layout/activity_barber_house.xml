@@ -29,7 +29,7 @@
 
 
         <TextView
-            android:id="@+id/barberbarb1"
+            android:id="@+id/barberbarb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -41,11 +41,11 @@
             android:padding="15dp"
             android:textColor="#7A8089"
             android:textSize="18sp"
-            android:text="Barbeiro3"
+            android:text="André Alves"
             />
 
         <TextView
-            android:id="@+id/barberbarb2"
+            android:id="@+id/barberbarb4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -57,7 +57,7 @@
             android:padding="15dp"
             android:textColor="#7A8089"
             android:textSize="18sp"
-            android:text="Barbeiro4" />
+            android:text="Pedro Pinto" />
 
     </LinearLayout>
 

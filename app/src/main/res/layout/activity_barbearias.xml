@@ -40,14 +40,14 @@
 
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView4"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="150dp"
             android:layout_marginStart="100dp"
 
-            app:srcCompat="@drawable/barb1" />
+            app:srcCompat="@drawable/barb5" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -62,7 +62,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView1"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
@@ -70,17 +70,17 @@
             android:layout_marginStart="100dp"
             android:clickable="true"
 
-            app:srcCompat="@drawable/barb4" />
+            app:srcCompat="@drawable/barb1" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView3"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="350dp"
             android:layout_marginEnd="100dp"
             android:clickable="true"
-            app:srcCompat="@drawable/barb5" />
+            app:srcCompat="@drawable/barb4" />
 
 
     </FrameLayout>

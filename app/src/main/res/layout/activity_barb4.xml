@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="280dp"
-            android:text="Barbearia Zé Barberius"
+            android:text="BarberHouse"
             android:textAlignment="center"
             android:textColor="#C8C8C8"
             android:textSize="26dp"

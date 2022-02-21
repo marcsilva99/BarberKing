@@ -41,7 +41,7 @@
             android:padding="15dp"
             android:textColor="#7A8089"
             android:textSize="18sp"
-            android:text="Barbeiro1"
+            android:text="Gonçalo Santos"
             />
 
         <TextView
@@ -57,7 +57,7 @@
             android:padding="15dp"
             android:textColor="#7A8089"
             android:textSize="18sp"
-            android:text="Barbeiro2" />
+            android:text="Fabio Vieira" />
 
     </LinearLayout>
 

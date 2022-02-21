@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.barberking">
 
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
@@ -13,19 +14,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
-            android:name=".Marcação.Asgard.D1B1"
+            android:name=".Marcação.ConfirmarActivity"
             android:exported="false" />
         <activity
-            android:name=".Marcação.LeleBarber.Barbeiro8Activity"
+            android:name=".Marcação.Asgard.B1D.D1B1"
             android:exported="false" />
         <activity
-            android:name=".Marcação.LeleBarber.Barbeiro7Activity"
+            android:name=".Marcação.Asgard.B1D.D2B1"
             android:exported="false" />
         <activity
-            android:name=".Marcação.Gentlemen.Barbeiro6Activity"
+            android:name=".Marcação.Asgard.B1D.D3B1"
             android:exported="false" />
         <activity
-            android:name=".Marcação.Gentlemen.Barbeiro5Activity"
+            android:name=".Marcação.Asgard.B2D.D1B2"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.Asgard.B2D.D2B2"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.Asgard.B2D.D3B2"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B3D.D1B3"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B3D.D2B3"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B3D.D3B3"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B4D.D1B4"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B4D.D2B4"
+            android:exported="false" />
+        <activity
+            android:name=".Marcação.BarberHouse.B4D.D3B4"
             android:exported="false" />
         <activity
             android:name=".Marcação.BarberHouse.Barbeiro4Activity"
@@ -37,19 +62,9 @@
             android:name=".Marcação.Asgard.Barbeiro2Activity"
             android:exported="false" />
         <activity
-            android:name=".Marcação.Asgard.Barbeiro1Activity"
-            android:exported="false" />
+            android:name=".Marcação.Asgard.Barbeiro1Activity"/>
         <activity
-            android:name=".Marcação.Teste.Barb2datasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Marcação.Teste.Barb1datasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Marcação.LeleBarber.LeleBarberActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Marcação.Gentlemen.GentelmenActivity"
+            android:name=".Marcação.Embreve"
             android:exported="false" />
         <activity
             android:name=".Marcação.BarberHouse.BarberHouseActivity"
@@ -64,14 +79,9 @@
             android:name=".Jogo.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".Jogo2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".QuizQuestionsActivity"
-            android:exported="false" />
-        <activity
             android:name=".Jogo.Question"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".InfoBarbearias.BarberHouse.barb4barbeirosActivity"
             android:exported="false" />
@@ -101,9 +111,6 @@
             android:exported="false" />
         <activity
             android:name=".InfoBarbearias.BarbeariasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TipoCorteActivity"
             android:exported="false" />
         <activity
             android:name=".InfoBarbearias.BarberHouse.barb4Activity"
