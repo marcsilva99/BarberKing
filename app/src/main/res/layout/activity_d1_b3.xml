@@ -20,34 +20,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:text="Escolha uma hora:"
+            android:text="Selecione uma hora"
             android:textAlignment="center"
             android:textColor="#C8C8C8"
-            android:textSize="30dp"
+            android:textSize="26dp"
             android:textStyle="bold" />
 
 
 
         <TextView
             android:id="@+id/h1011"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
-            android:padding="15dp"
-            android:textColor="#7A8089"
-            android:textSize="18sp"
-            android:text="10:00/11:00"
             android:onClick="onClick"
-            />
+            android:padding="15dp"
+            android:text="10:00/11:00"
+            android:textColor="#7A8089"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/h1112"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -63,7 +64,8 @@
             />
         <TextView
             android:id="@+id/h1415"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -79,7 +81,8 @@
             />
         <TextView
             android:id="@+id/h1516"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -95,7 +98,8 @@
             />
         <TextView
             android:id="@+id/h1617"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"

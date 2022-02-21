@@ -1,26 +1,16 @@
 package com.example.barberking.Marcação.Asgard.B1D
 
 import android.content.DialogInterface
-import android.content.Intent
 import android.graphics.Color
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ActionMode
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
 import com.example.barberking.R
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
-import com.google.firebase.firestore.auth.User
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_d1_b1.*
 
 class D1B1 : AppCompatActivity() {
@@ -71,7 +61,8 @@ class D1B1 : AppCompatActivity() {
                 builder.setView(view)
                 builder.setPositiveButton("Confirmar", DialogInterface.OnClickListener { _, _ ->
 
-                    h1112.setBackgroundColor(Color.parseColor("#FF0000"))
+                    h1112.setBackgroundColor(Color.parseColor("#782B2B"))
+                    h1112.setTextColor(Color.parseColor("#782B2B"))
 
                     val data = hashMapOf("livre" to false)
 
