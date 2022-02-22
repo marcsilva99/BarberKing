@@ -54,7 +54,7 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="520dp"
             android:clickable="true"
             app:srcCompat="@drawable/text2" />
@@ -64,20 +64,11 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="380dp"
             android:clickable="true"
             app:srcCompat="@drawable/text2" />
 
-        <ImageView
-            android:id="@+id/barb1infotext2"
-            android:layout_width="170dp"
-            android:layout_height="130dp"
-            android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginVertical="380dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/text2" />
 
         <TextView
             android:id="@+id/barb1barbb"

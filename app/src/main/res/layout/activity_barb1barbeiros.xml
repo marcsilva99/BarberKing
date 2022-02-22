@@ -31,8 +31,7 @@
         android:id="@+id/barb1infob"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="50dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginVertical="380dp"
         android:layout_marginEnd="90dp"
         android:clickable="true"
@@ -43,8 +42,7 @@
         android:id="@+id/barb1infob2"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="50dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginVertical="520dp"
         android:layout_marginEnd="90dp"
         android:clickable="true"
@@ -52,21 +50,21 @@
 
 
     <ImageView
-        android:id="@+id/barb1infotext1"
+        android:id="@+id/barb1infotext3"
         android:layout_width="170dp"
         android:layout_height="130dp"
         android:layout_gravity="right"
-        android:layout_marginHorizontal="50dp"
+        android:layout_marginHorizontal="5dp"
         android:layout_marginVertical="520dp"
         android:clickable="true"
         app:srcCompat="@drawable/text2" />
 
         <ImageView
-            android:id="@+id/barb1infotext2"
+            android:id="@+id/barb1infotext4"
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="380dp"
             android:clickable="true"
             app:srcCompat="@drawable/text2" />
@@ -75,10 +73,10 @@
             android:id="@+id/barb1barbb"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="405dp"
             android:text="Xavier Sampaio"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -102,7 +100,7 @@
             android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="545dp"
-            android:text="Sergio tavares"
+            android:text="Sergio Tavares"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />

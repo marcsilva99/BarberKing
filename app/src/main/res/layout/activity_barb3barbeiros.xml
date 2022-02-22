@@ -12,6 +12,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +55,7 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="520dp"
             android:clickable="true"
             app:srcCompat="@drawable/text2" />
@@ -64,7 +65,7 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             android:layout_gravity="right"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="380dp"
             android:clickable="true"
             app:srcCompat="@drawable/text2" />
@@ -73,10 +74,10 @@
             android:id="@+id/barb1barbb"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="405dp"
             android:text="Marcelo Silva"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -85,10 +86,10 @@
             android:id="@+id/barb1barbc"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="455dp"
             android:text="33 anos"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -97,10 +98,10 @@
             android:id="@+id/barb1barbe"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="545dp"
             android:text="Vasco Cortez"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -109,14 +110,13 @@
             android:id="@+id/barb1barbd"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:textAlignment="center"
             android:layout_marginHorizontal="190dp"
             android:layout_marginVertical="595dp"
             android:text="26 anos"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
-
 
 
     </FrameLayout>

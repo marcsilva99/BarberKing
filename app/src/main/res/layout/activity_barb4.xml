@@ -13,6 +13,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,14 +65,12 @@
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="210dp"
             android:background="@drawable/buttonshape"
             android:text="Showroom"
-            android:layout_marginTop="190dp"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
-
-
 
 
     </FrameLayout>

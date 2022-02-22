@@ -25,8 +25,12 @@
         android:id="@+id/texttele1"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="410dp"
-        android:layout_marginStart="140dp"
+        android:layout_below="@+id/textlocal1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="65dp"
+        android:layout_toEndOf="@+id/telelbarb1"
         android:text="912345800"
         android:textColor="#C8C8C8"
         android:textSize="15dp"
@@ -44,9 +48,11 @@
         android:id="@+id/localbarb1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/tvBarbearia1"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginVertical="335dp"
         android:layout_marginStart="83dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/pino" />
 
 
@@ -54,20 +60,26 @@
         android:id="@+id/telelbarb1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/localbarb1"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginVertical="395dp"
         android:layout_marginStart="83dp"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/tele" />
 
     <TextView
         android:id="@+id/textlocal1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="350dp"
-        android:layout_marginStart="140dp"
+        android:layout_below="@+id/tvBarbearia1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toEndOf="@+id/localbarb1"
         android:background="#00FFFFFF"
         android:text="Rua João de Deus 540, VNG"
-
         android:textColor="#C8C8C8"
         android:textSize="15dp"
         android:textStyle="bold" />
@@ -76,9 +88,12 @@
         android:id="@+id/tvButtonBarb1"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="540dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/gps1"
         android:background="#595959"
         android:text="Ir Para"
         android:textAlignment="center"
@@ -90,8 +105,12 @@
         android:id="@+id/gps1"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="480dp"
+        android:layout_below="@+id/texttele1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="65dp"
         app:srcCompat="@drawable/map1" />
 
 
