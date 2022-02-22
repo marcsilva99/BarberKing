@@ -59,7 +59,17 @@
             android:clickable="true"
             app:srcCompat="@drawable/barbbarbeiro" />
 
-
+        <Button
+            android:id="@+id/btn_showroom1"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="Showroom"
+            android:layout_marginTop="190dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
 

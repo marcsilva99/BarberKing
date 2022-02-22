@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BarberKing">
         <activity
+            android:name=".InfoBarbearias.BarberHouse.barb4showActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoBarbearias.Asgard.barb2showActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoBarbearias.Gentlemen.barb3showActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoBarbearias.LeleBarber.barb1showActivity"
+            android:exported="false" />
+        <activity
             android:name=".Marcação.ConfirmarActivity"
             android:exported="false" />
         <activity
@@ -61,8 +73,7 @@
         <activity
             android:name=".Marcação.Asgard.Barbeiro2Activity"
             android:exported="false" />
-        <activity
-            android:name=".Marcação.Asgard.Barbeiro1Activity"/>
+        <activity android:name=".Marcação.Asgard.Barbeiro1Activity" />
         <activity
             android:name=".Marcação.Embreve"
             android:exported="false" />
