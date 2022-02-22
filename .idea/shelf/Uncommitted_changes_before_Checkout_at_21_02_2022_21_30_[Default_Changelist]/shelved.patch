@@ -1,0 +1,115 @@
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    package=\"com.example.barberking\">\r\n\r\n    <uses-permission android:name=\"android.permission.WRITE_CALENDAR\" />\r\n    <uses-permission android:name=\"android.permission.READ_CALENDAR\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_logo\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_logo_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.BarberKing\">\r\n        <activity\r\n            android:name=\".Marcação.ConfirmarActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B1D.D1B1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B1D.D2B1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B1D.D3B1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B2D.D1B2\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B2D.D2B2\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.B2D.D3B2\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B3D.D1B3\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B3D.D2B3\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B3D.D3B3\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B4D.D1B4\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B4D.D2B4\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.B4D.D3B4\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.Barbeiro4Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.Barbeiro3Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.Barbeiro2Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.Barbeiro1Activity\"/>\r\n        <activity\r\n            android:name=\".Marcação.Embreve\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.BarberHouse.BarberHouseActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.Asgard.AsgardActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Jogo.JogoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Jogo.ResultActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Jogo.Question\"\r\n            android:exported=\"false\"\r\n            tools:ignore=\"Instantiatable\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.BarberHouse.barb4barbeirosActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.BarberHouse.barb4infoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.Gentlemen.barb3infoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.Gentlemen.barb3barbeirosActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.Asgard.barb2infoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.Asgard.barb2barbeirosActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.LeleBarber.barb1barbeirosActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.LeleBarber.barb1infoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Marcação.MarcacaoActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.BarbeariasActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.BarberHouse.barb4Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.Gentlemen.barb3Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainnActivity\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".InfoBarbearias.Asgard.barb2Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".InfoBarbearias.LeleBarber.barb1Activity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Inicio.LoginActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Inicio.RegisterActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".ProfileActivity\"\r\n            android:exported=\"false\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	
++++ b/app/src/main/AndroidManifest.xml	
+@@ -1,6 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:tools="http://schemas.android.com/tools"
+     package="com.example.barberking">
+ 
+     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+@@ -14,57 +13,43 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.BarberKing">
+         <activity
+-            android:name=".Marcação.ConfirmarActivity"
++            android:name=".Marcação.Asgard.D1B1"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.B1D.D1B1"
++            android:name=".Marcação.LeleBarber.Barbeiro8Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.B1D.D2B1"
++            android:name=".Marcação.LeleBarber.Barbeiro7Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.B1D.D3B1"
++            android:name=".Marcação.Gentlemen.Barbeiro6Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.B2D.D1B2"
++            android:name=".Marcação.Gentlemen.Barbeiro5Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.B2D.D2B2"
+-            android:exported="false" />
+-        <activity
+-            android:name=".Marcação.Asgard.B2D.D3B2"
++            android:name=".Marcação.BarberHouse.Barbeiro4Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.BarberHouse.B3D.D1B3"
++            android:name=".Marcação.BarberHouse.Barbeiro3Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.BarberHouse.B3D.D2B3"
+-            android:exported="false" />
+-        <activity
+-            android:name=".Marcação.BarberHouse.B3D.D3B3"
+-            android:exported="false" />
+-        <activity
+-            android:name=".Marcação.BarberHouse.B4D.D1B4"
+-            android:exported="false" />
+-        <activity
+-            android:name=".Marcação.BarberHouse.B4D.D2B4"
++            android:name=".Marcação.Asgard.Barbeiro2Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.BarberHouse.B4D.D3B4"
++            android:name=".Marcação.Asgard.Barbeiro1Activity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.BarberHouse.Barbeiro4Activity"
++            android:name=".Marcação.Teste.Barb2datasActivity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.BarberHouse.Barbeiro3Activity"
++            android:name=".Marcação.Teste.Barb1datasActivity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.Barbeiro2Activity"
++            android:name=".Marcação.LeleBarber.LeleBarberActivity"
+             android:exported="false" />
+         <activity
+-            android:name=".Marcação.Asgard.Barbeiro1Activity"/>
+-        <activity
+-            android:name=".Marcação.Embreve"
++            android:name=".Marcação.Gentlemen.GentelmenActivity"
+             android:exported="false" />
+         <activity
+             android:name=".Marcação.BarberHouse.BarberHouseActivity"
+@@ -79,9 +64,14 @@
+             android:name=".Jogo.ResultActivity"
+             android:exported="false" />
+         <activity
++            android:name=".Jogo2Activity"
++            android:exported="false" />
++        <activity
++            android:name=".QuizQuestionsActivity"
++            android:exported="false" />
++        <activity
+             android:name=".Jogo.Question"
+-            android:exported="false"
+-            tools:ignore="Instantiatable" />
++            android:exported="false" />
+         <activity
+             android:name=".InfoBarbearias.BarberHouse.barb4barbeirosActivity"
+             android:exported="false" />
+@@ -111,6 +101,9 @@
+             android:exported="false" />
+         <activity
+             android:name=".InfoBarbearias.BarbeariasActivity"
++            android:exported="false" />
++        <activity
++            android:name=".TipoCorteActivity"
+             android:exported="false" />
+         <activity
+             android:name=".InfoBarbearias.BarberHouse.barb4Activity"

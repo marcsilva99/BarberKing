@@ -1,0 +1,206 @@
+Index: app/src/main/res/layout/activity_ultima_agendamento.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_ultima_agendamento.xml b/app/src/main/res/layout/activity_ultima_agendamento.xml
+new file mode 100644
+--- /dev/null	
++++ b/app/src/main/res/layout/activity_ultima_agendamento.xml	
+@@ -0,0 +1,138 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="fill_parent"
++    android:layout_height="fill_parent"
++    android:background="#782B2B"
++    tools:context=".UltimaAgendamentoActivity">
++
++
++
++    <EditText
++        android:id="@+id/nomeagendamento"
++        android:layout_width="300dp"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:drawableStart="@drawable/ic_email"
++        android:drawablePadding="3dp"
++        android:fontFamily="sans-serif"
++        android:hint="Nome"
++        android:inputType="textEmailAddress"
++        android:maxLines="1"
++        android:textSize="18sp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.495"
++        app:layout_constraintStart_toStartOf="parent"
++        tools:layout_editor_absoluteY="35dp" />
++
++    <EditText
++        android:id="@+id/contactoagendamento"
++        android:layout_width="300dp"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:drawableStart="@drawable/ic_email"
++        android:drawablePadding="3dp"
++        android:fontFamily="sans-serif"
++        android:hint="Contacto"
++        android:inputType="textEmailAddress"
++        android:maxLines="1"
++        android:textSize="18sp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.495"
++        app:layout_constraintStart_toStartOf="parent"
++        tools:layout_editor_absoluteY="104dp" />
++
++    <TextView
++        android:id="@+id/textdata"
++        android:layout_width="35dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="Dia:"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="55dp"
++        tools:layout_editor_absoluteY="279dp" />
++
++    <TextView
++        android:id="@+id/diadefinido"
++        android:layout_width="50dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="----"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="90dp"
++        tools:layout_editor_absoluteY="279dp" />
++
++    <TextView
++        android:id="@+id/barbeirooo"
++        android:layout_width="80dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="Barbeiro:"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="55dp"
++        tools:layout_editor_absoluteY="214dp" />
++
++    <TextView
++        android:id="@+id/barbeirodefinido"
++        android:layout_width="50dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="----"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="135dp"
++        tools:layout_editor_absoluteY="214dp" />
++
++    <TextView
++        android:id="@+id/texthora"
++        android:layout_width="55dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="Hora:"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="55dp"
++        tools:layout_editor_absoluteY="353dp" />
++
++    <TextView
++        android:id="@+id/horadefinida"
++        android:layout_width="50dp"
++        android:layout_height="wrap_content"
++        android:layout_marginVertical="350dp"
++        android:background="#00FFFFFF"
++        android:text="----"
++        android:textColor="#C8C8C8"
++        android:textSize="18dp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="110dp"
++        tools:layout_editor_absoluteY="353dp" />
++
++    <Button
++        android:id="@+id/agendar"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_margin="10dp"
++        android:background="@drawable/buttonshape"
++        android:text="Agendar"
++        android:textColor="@android:color/white"
++        android:textSize="18sp"
++        android:textStyle="bold"
++        tools:layout_editor_absoluteX="9dp"
++        tools:layout_editor_absoluteY="450dp" />
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/barberking/UltimaAgendamentoActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/barberking/UltimaAgendamentoActivity.kt b/app/src/main/java/com/example/barberking/UltimaAgendamentoActivity.kt
+new file mode 100644
+--- /dev/null	
++++ b/app/src/main/java/com/example/barberking/UltimaAgendamentoActivity.kt	
+@@ -0,0 +1,11 @@
++package com.example.barberking
++
++import androidx.appcompat.app.AppCompatActivity
++import android.os.Bundle
++
++class UltimaAgendamentoActivity : AppCompatActivity() {
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_ultima_agendamento)
++    }
++}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/buttonshape.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/buttonshapee.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/formabotao.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/ic_barber.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/drawable/ic_marcacao.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb1.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb2.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb3.xml\" value=\"0.32019927536231885\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_login.xml\" value=\"0.2115036231884058\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml\" value=\"0.3179347826086957\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/fragment_barb1.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/layout/fragment_profile.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/menu/menu.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/ASUS/AndroidStudioProjects/BarberKing/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/buttonshape.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/ic_barber.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/ic_game.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/drawable/ic_password.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1barbeiros.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1info.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2barbeiros.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2info.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb3.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb3barbeiros.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb3info.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4barbeiros.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4info.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbearias.xml\" value=\"0.2694746376811594\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_jogo.xml\" value=\"0.3197463768115942\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml\" value=\"0.276268115942029\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_senha.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/marce/StudioProjects/BarberKing/app/src/main/res/layout/coias.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/drawable/selected_option_border_bg.xml\" value=\"0.37864583333333335\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_asgard.xml\" value=\"0.3309659090909091\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1.xml\" value=\"0.34193840579710144\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1barbeiros.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1datas.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2.xml\" value=\"0.2980072463768116\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2barbeiros.xml\" value=\"0.29257246376811596\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2datas.xml\" value=\"0.35260416666666666\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2info.xml\" value=\"0.29257246376811596\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb3.xml\" value=\"0.3383152173913043\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb3barbeiros.xml\" value=\"0.29257246376811596\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4.xml\" value=\"0.13541666666666666\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4barbeiros.xml\" value=\"0.29257246376811596\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb4info.xml\" value=\"0.3383152173913043\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbearias.xml\" value=\"0.3383152173913043\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro1.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro2.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro3.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro4.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro5.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro6.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro7.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro8.xml\" value=\"0.36141304347826086\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barber_house.xml\" value=\"0.35260416666666666\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml\" value=\"0.21422101449275363\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_gentelmen.xml\" value=\"0.36666666666666664\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_jogo.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_jogo2.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_lele_barber.xml\" value=\"0.36666666666666664\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_loginn.xml\" value=\"0.34193840579710144\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_mainn.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_marcacao.xml\" value=\"0.33126934984520123\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_profile.xml\" value=\"0.36666666666666664\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_quiz_questions.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_registerr.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_result.xml\" value=\"0.3625\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_senha.xml\" value=\"0.36666666666666664\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml\" value=\"0.36666666666666664\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/drawable/ic_profile.xml\" value=\"0.21875\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb1.xml\" value=\"0.25769927536231885\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb2.xml\" value=\"0.25769927536231885\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb3.xml\" value=\"0.32563405797101447\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb4.xml\" value=\"0.32563405797101447\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_login.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_loginn.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_main.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_mainn.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_register.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_registerr.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_verificar_login.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb1.xml\" value=\"0.20260416666666667\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb2.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb3.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barb4.xml\" value=\"0.2644927536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/barra.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/dialog_forgot_password.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/fragment_profile.xml\" value=\"0.2957427536231884\" />\r\n        <entry key=\"..\\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/menu/menu.xml\" value=\"0.36666666666666664\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"SuppressKotlinCodeStyleNotification\">\r\n    <option name=\"disableForAll\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -59,6 +59,7 @@
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1.xml" value="0.34193840579710144" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1barbeiros.xml" value="0.25" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1datas.xml" value="0.36141304347826086" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb1info.xml" value="0.29257246376811596" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2.xml" value="0.2980072463768116" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2barbeiros.xml" value="0.29257246376811596" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barb2datas.xml" value="0.35260416666666666" />
+@@ -78,6 +79,8 @@
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro7.xml" value="0.36141304347826086" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barbeiro8.xml" value="0.36141304347826086" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_barber_house.xml" value="0.35260416666666666" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_d1_b1.xml" value="0.35190217391304346" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_d2_b1.xml" value="0.34692028985507245" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_esqueceu_pass.xml" value="0.21422101449275363" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_gentelmen.xml" value="0.36666666666666664" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_jogo.xml" value="0.25" />
+@@ -92,6 +95,7 @@
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_result.xml" value="0.3625" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_senha.xml" value="0.36666666666666664" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_tipo_corte.xml" value="0.36666666666666664" />
++        <entry key="..\:/Users/santo/StudioProjects/BarberKing/app/src/main/res/layout/activity_ultima_agendamento.xml" value="0.35190217391304346" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/drawable/ic_profile.xml" value="0.21875" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb1.xml" value="0.25769927536231885" />
+         <entry key="..\:/Users/santo/StudioProjects/BarberKing1/app/src/main/res/layout/activity_barb2.xml" value="0.25769927536231885" />
