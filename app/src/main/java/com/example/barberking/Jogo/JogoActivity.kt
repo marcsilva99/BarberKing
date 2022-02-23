@@ -113,9 +113,9 @@ class JogoActivity : AppCompatActivity(), View.OnClickListener {
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
                     btn_submit.text = "FINISH"
                     if (mCurrentPosition == mQuestionsList!!.size) {
-                        btn_submit.text = "FINISH"
+                        btn_submit.text = "TERMINAR"
                     } else {
-                        btn_submit.text = "GO TO NEXT QUESTION"
+                        btn_submit.text = "PRÓXIMA PERGUNTA"
                     }
 
                     mSelectedOptionPosition = 0
@@ -134,9 +134,9 @@ class JogoActivity : AppCompatActivity(), View.OnClickListener {
         defaultOptionsView()
 
         if (mCurrentPosition == mQuestionsList!!.size) {
-            btn_submit.text = "FINISH"
+            btn_submit.text = "TERMINAR"
         } else {
-            btn_submit.text = "SUBMIT"
+            btn_submit.text = "CONFIRMAR"
         }
 
         progressBar.progress = mCurrentPosition
